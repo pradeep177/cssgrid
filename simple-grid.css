@@ -1,0 +1,17 @@
+.grid-container > div{
+    margin: 5px;
+    background-color:aquamarine;
+}
+
+.grid-container> div:nth-child(even) {
+    background-color:grey;;
+}
+
+.grid-container {
+    display:grid;
+    /* grid-template-columns:1fr 1fr 1fr; */
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    /* justify-items: center; */
+    justify-items: start;
+}
